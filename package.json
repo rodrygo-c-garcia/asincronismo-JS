@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/rodrygo-c-garcia/asincronismo-JS/issues"
   },
-  "homepage": "https://github.com/rodrygo-c-garcia/asincronismo-JS#readme"
+  "homepage": "https://github.com/rodrygo-c-garcia/asincronismo-JS#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
