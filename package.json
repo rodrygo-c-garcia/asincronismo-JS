@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "callback": "src/callback/challenge.js"
+    "callback": "node src/callback/challenge.js"
   },
   "repository": {
     "type": "git",
