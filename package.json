@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rodrygo-c-garcia/asincronismo-JS#readme",
   "dependencies": {
+    "xhttp": "^0.15.3",
     "xmlhttprequest": "^1.8.0"
   }
 }
