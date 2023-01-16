@@ -7,4 +7,13 @@ fetch(`${API}/comments`)
   .then((comments) => {
     console.log("Todos los comentarios");
     console.log(comments);
-  });
+
+    fetch(`${API}/comments/${comments[0].id}`)
+      .then((response) => response.json())
+      .then((coment) => {
+        console.log("El comentario seleccionado es: ");
+        console.log(coment);
+      })
+      .catch((err) => console.error(err));
+  })
+  .catch((err) => console.error(err));
