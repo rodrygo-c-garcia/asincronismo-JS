@@ -16,6 +16,7 @@ fetch(`${API}/posts`)
         console.log("El post seleccionado es: ");
         console.log(post);
 
+        // Obtenemos el comentario del post
         fetch(`${API}/comments/${post.id}`)
           .then((response) => response.json())
           .then((comment) => {

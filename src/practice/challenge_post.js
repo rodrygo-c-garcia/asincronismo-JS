@@ -12,4 +12,16 @@ function postData(urlApi, data) {
   return response;
 }
 
-const data = {};
+const data = {
+  title: "APIs Publicas",
+  body: "Las mejores APIs publicas para consumir y practicar",
+  userId: 90,
+};
+
+postData(`${API}/posts`, data)
+  .then((response) => response.json())
+  .then((data) => {
+    // Post añadido
+    console.log(data);
+  })
+  .catch((error) => console.log(error));
