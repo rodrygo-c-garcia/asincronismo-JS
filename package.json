@@ -23,5 +23,6 @@
     "node-fetch": "^3.3.0",
     "xhttp": "^0.15.3",
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "type": "module"
 }
