@@ -11,3 +11,5 @@ function postData(urlApi, data) {
   });
   return response;
 }
+
+const data = {};

@@ -2,19 +2,27 @@
 import fetch from "node-fetch";
 const API = "https://jsonplaceholder.typicode.com";
 
-fetch(`${API}/comments`)
+fetch(`${API}/posts`)
   .then((response) => response.json())
-  .then((comments) => {
-    // obteniendo todos los comentarios
-    console.log("Todos los comentarios");
-    console.log(comments);
+  .then((posts) => {
+    // obteniendo todos los posts
+    console.log("Todos los posts");
+    console.log(posts);
 
-    fetch(`${API}/comments/${comments[0].id}`)
+    fetch(`${API}/posts/${posts[0].id}`)
       .then((response) => response.json())
-      .then((coment) => {
-        // obteniendo un comentario en particular
-        console.log("El comentario seleccionado es: ");
-        console.log(coment);
+      .then((post) => {
+        // obteniendo un post en particular
+        console.log("El post seleccionado es: ");
+        console.log(post);
+
+        fetch(`${API}/comments/${post.id}`)
+          .then((response) => response.json())
+          .then((comment) => {
+            console.log("Comentario del Post es: ");
+            console.log(comment);
+          })
+          .catch((err) => console.error(err));
       })
       .catch((err) => console.error(err));
   })
