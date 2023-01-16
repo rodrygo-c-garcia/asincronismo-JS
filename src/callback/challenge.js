@@ -45,3 +45,5 @@ fetchData(`${API}/products`, function (error1, data1) {
     );
   });
 });
+
+// CLASE 11 Que son las promesas?
