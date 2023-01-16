@@ -14,7 +14,6 @@ function fetchData(urlAPI) {
 //   })
 //   .catch((error) => console.log(error));
 
-// Mostrando un producto en particular
 fetchData(`${API}/products`)
   .then((response) => response.json())
   // obteniendo todos los products
