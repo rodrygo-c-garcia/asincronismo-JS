@@ -15,3 +15,11 @@ function postData(urlAPI, data) {
   });
   return response;
 }
+
+const data = {
+  title: "Choes Nike",
+  price: 120,
+  description: "Nike shoes for people of all kinds",
+  categoryId: 1,
+  images: ["https://placeimg.com/640/480/any"],
+};
