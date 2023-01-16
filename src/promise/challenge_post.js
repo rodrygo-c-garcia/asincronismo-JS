@@ -23,3 +23,7 @@ const data = {
   categoryId: 1,
   images: ["https://placeimg.com/640/480/any"],
 };
+
+postData(`${API}/products`, data)
+  .then((response) => response.json().then((data) => console.log(data)))
+  .catch((error) => console.error(error));
