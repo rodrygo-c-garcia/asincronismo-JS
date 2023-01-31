@@ -1,2 +1,2 @@
 # asincronismo-JS
-# Projecto de consumo de API con axios
+# Projecto de consumo de API de peliculas con axios.
